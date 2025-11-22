@@ -1,0 +1,250 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  background-color: #1d1f20;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: #fff;
+}
+
+.navbar-nav .nav-link {
+  color: #fff !important;
+}
+
+.navbar-toggler-icon {
+  filter: invert(1);
+}
+
+.navbar-toggler {
+  border-color: #fff;
+}
+
+/* ===== Hero Section Fullscreen with Floating Bubbles ===== */
+.hero-section {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #000;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.bubble-bg .bubble {
+  position: absolute;
+  bottom: -100px;
+  background: rgba(40, 167, 69, 0.15);
+  border-radius: 50%;
+  animation: rise 10s infinite ease-in;
+}
+
+.bubble:nth-child(1) {
+  left: 10%;
+  width: 40px;
+  height: 40px;
+  animation-duration: 8s;
+}
+
+.bubble:nth-child(2) {
+  left: 30%;
+  width: 25px;
+  height: 25px;
+  animation-duration: 10s;
+  animation-delay: 2s;
+}
+
+.bubble:nth-child(3) {
+  left: 50%;
+  width: 60px;
+  height: 60px;
+  animation-duration: 12s;
+  animation-delay: 4s;
+}
+
+.bubble:nth-child(4) {
+  left: 70%;
+  width: 30px;
+  height: 30px;
+  animation-duration: 9s;
+  animation-delay: 1s;
+}
+
+.bubble:nth-child(5) {
+  left: 85%;
+  width: 50px;
+  height: 50px;
+  animation-duration: 11s;
+  animation-delay: 3s;
+}
+
+@keyframes rise {
+  0% {
+    transform: translateY(0);
+    opacity: 0.7;
+  }
+
+  50% {
+    opacity: 0.4;
+  }
+
+  100% {
+    transform: translateY(-120vh);
+    opacity: 0;
+  }
+}
+
+/* Social Icons in Hero */
+.hero-section .social-icons a {
+  font-size: 1.8rem;
+  margin: 0 10px;
+  color: #28a745;
+  transition: 0.3s;
+}
+
+.hero-section .social-icons a:hover {
+  color: #fff;
+  transform: scale(1.2);
+}
+
+/* Work Section */
+.work-section {
+  padding: 80px 0;
+}
+
+.work-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.work-card:hover {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.highlight {
+  color: #28a745;
+  text-shadow: 0 0 10px rgba(40, 167, 69, 0.7);
+  font-weight: bold;
+}
+
+/* Certificates Section */
+.certificate-section {
+  padding: 80px 0;
+  background-color: #f8f9fa;
+}
+
+.certificate-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+#contact .section-title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#contact pre {
+  overflow-x: auto;
+  max-height: 300px;
+}
+
+.cert-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  background: white;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.cert-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+  border-color: #28a745;
+}
+
+.cert-card img {
+  transition: 0.3s;
+}
+
+.cert-card:hover img {
+  transform: scale(1.05);
+}
+
+.cert-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  background: white;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.cert-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+  border-color: #28a745;
+}
+
+.cert-card img {
+  transition: 0.3s;
+}
+
+.cert-card:hover img {
+  transform: scale(1.05);
+}
+
+.cert-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  background: white;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.cert-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+  border-color: #686c69;
+}
+
+.cert-card img {
+  transition: 0.3s;
+}
+
+.cert-card:hover img {
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  background: #1d1f20;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
